@@ -2,6 +2,9 @@
 
 ## Intro to Express.js
 
-Simple express application demonstrating the ability to install and initialize express, use express methods, and create routes with callback functions.
-
-Nothing too fancy. I am a beginner :P
+Simple express application demonstrating:
+- installing and initializing express 
+- using express methods
+- creating routes with callback functions.
+- star `*` route matcher implementation
+- route paramater implementation
