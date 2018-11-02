@@ -18,12 +18,13 @@ app.get("/dog", function(req, res){
 
 //Route paramater implementation
 app.get("/e/:subfile", function(req, res){
-    res.send("Welcome to the " + req.params.subfile + " page!!!");
+    let sub = req.params.subfile;
+    res.send("Welcome to the " + sub + " page!!!");
 });
 
 // "*" => "YOU ARE A STAR" catchall/fallback route matcher
 app.get("*", function(req, res){
-    res.send("YOU ARE A STAR");
+    res.send("Not that way...hurry up and go back!!");
 });
 
 // Tell Express to listen for requests (starts the server)
