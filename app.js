@@ -16,8 +16,17 @@ app.get("/dog", function(req, res){
     res.send("MEOW!!");
 });
 
-// Tell Express to listen for requests (starts the server)
+//Route paramater implementation
+app.get("/e/:subfile", function(req, res){
+    res.send("Welcome to the " + req.params.subfile + " page!!!");
+});
 
+// "*" => "YOU ARE A STAR" catchall/fallback route matcher
+app.get("*", function(req, res){
+    res.send("YOU ARE A STAR");
+});
+
+// Tell Express to listen for requests (starts the server)
 app.listen(3000, function(){
     console.log("Server has started!!!");
 });
